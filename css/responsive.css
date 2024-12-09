@@ -1,0 +1,220 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-gap-sm {
+    gap: 16px;
+}
+
+.grid-gap-base {
+    gap: 24px;
+}
+
+.grid-gap-lg {
+    gap: 32px;
+}
+
+.grid-gap-2xl {
+    gap: 56px;
+}
+
+.col-full,
+.col-12 {
+    grid-column: span 12;
+}
+
+.col-1 {
+    grid-column: span 1 / span 12;
+}
+
+.col-2 {
+    grid-column: span 2 / span 12;
+}
+
+.col-3 {
+    grid-column: span 3 / span 12;
+}
+
+.col-4 {
+    grid-column: span 4 / span 12;
+}
+
+.col-5 {
+    grid-column: span 5 / span 12;
+}
+
+.col-6 {
+    grid-column: span 6 / span 12;
+}
+
+@media (min-width: 1440px) {
+    /* =============================== */
+              /* navbar css */
+    /* =============================== */
+    .hamburger_menu {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439.98px) {
+    /* =============================== */
+              /* navbar css */
+    /* =============================== */
+    .nav_btn,
+    .nav_links_cont {
+        display: flex;
+    }
+
+    .hamburger_menu {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023.98px) {
+    /* =============================== */
+              /* navbar css */
+    /* =============================== */
+    .nav_btn,
+    .nav_links_cont {
+        display: none;
+    }
+
+    .hamburger_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 640.98px) {
+    /* =============================== */
+              /* common css */
+    /* =============================== */
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    .mobile\:hidden {
+        display: none;
+    }
+
+    .mobile\:col-full,
+    .mobile\:col-12 {
+        grid-column: span 12;
+    }
+
+    /* =============================== */
+              /* navbar css */
+    /* =============================== */
+    .nav_btn,
+    .nav_links_cont {
+        display: none;
+    }
+
+    .mobile_nav_cont {
+        display: flex;
+    }
+
+    /* =============================== */
+              /* hero css */
+    /* =============================== */
+    #hero {
+        padding: 453px 0px 164px;
+    }
+
+    .slide_down_btn {
+        bottom: -114px;
+        left: 0;
+        width: 64px;
+        height: 64px;
+    }
+
+    .hero_title {
+        font-size: 40px;
+        font-weight: 1.2;
+    }
+
+    .slider_cont {
+        display: none;
+    }
+
+    /* =============================== */
+              /* about us css */
+    /* =============================== */
+    #about {
+        padding-top: 51px;
+    }
+
+    /* =============================== */
+              /* team css */
+    /* =============================== */
+    #taam {
+        padding: 50px 0px 55px;
+    }
+
+    .team_item:nth-child(2) {
+        margin-top: 0px;
+    }
+
+    .team_item_text {
+        text-align: center;
+    }
+
+    /* =============================== */
+            /* properties css */
+    /* =============================== */
+    #properties {
+        padding: 47px 0px 55px;
+    }
+
+    /* =============================== */
+            /* re tips css */
+    /* =============================== */
+    /* #re_tips {
+        padding: 46px 0px 79px;
+    }
+
+    .re_tips_card {
+        flex-direction: row;
+    }
+
+    .re_tips_card_time {
+        flex-direction: column;
+    } */
+
+    /* =============================== */
+            /* contact us css */
+    /* =============================== */
+    .contact_us_cont {
+        flex-direction: column;
+    }
+
+    /* =============================== */
+                /* footer css */
+    /* =============================== */
+    #footer {
+        padding-top: 40px;
+    }
+
+    .footer_upper_cont {
+        padding-bottom: 21px;
+        flex-direction: column;
+    }
+
+    .footer_links_cont {
+        margin-top: 24px;
+        flex-direction: column;
+    }
+
+    .footer_lower_text_cont {
+        padding-top: 27px;
+        padding-bottom: 13px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .social_links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+}
